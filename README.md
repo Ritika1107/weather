@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# Weather App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This React-based weather application allows users to:
 
-## Get started
+1. Create an account and sign in
+2. View weather information for their current location
+3. Search for and display weather data for specific cities
 
-1. Install dependencies
+## Getting Started
 
-   ```bash
+To run the Weather App locally, follow these steps:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/weather-app.git
+   ```
+
+
+2. Install dependencies:
+   ```
    npm install
+   npm install firebase
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. Start the development server:
+   ```
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+4. Choose the iOS option to run the app in an iOS simulator or on your iOS device.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Using the App
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. **Sign Up and Sign In**: 
+   - On the home screen, tap "Sign Up" to create a new account.
+   - Enter your name, email, password, and phone number.
+   - After signing up, you'll be directed to the Sign In page.
+   - Use your email and password to sign in.
 
-## Get a fresh project
+2. **View Current Location Weather**:
+   - After signing in, the app will attempt to fetch weather data for your current location.
+   - Ensure you've granted the necessary location permissions to the app.
 
-When you're ready, run:
+3. **Search for Weather**:
+   - On the weather screen, you'll see a search bar at the top.
+   - Enter the name of a city and tap the "Search" button.
+   - The app will display the current weather for the specified city.
 
-```bash
-npm run reset-project
-```
+4. **Refresh Current Location Weather**:
+   - Tap the "Get My Weather" button to refresh the weather data for your current location.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Features
 
-## Learn more
+- User authentication (sign up and sign in)
+- Current location weather display
+- City-based weather search
+- Temperature display in Celsius
+- Weather condition description
 
-To learn more about developing your project with Expo, look at the following resources:
+## Technologies Used
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- React Native
+- Expo
+- Firebase (for user authentication and data storage)
+- OpenWeatherMap API (for weather data)
 
-## Join the community
+## Note
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This app is for educational purposes and may not include all security features necessary for a production application. Always ensure proper security measures are implemented when dealing with user data in real-world applications.

@@ -1,10 +1,8 @@
-import React from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
 import { Pressable, useColorScheme } from 'react-native';
 
-// Import Colors as a named export
-import { Colors } from '../../constants/Colors';
+import { Colors } from '@/constants/Colors';
 
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
@@ -27,7 +25,7 @@ export default function TabLayout() {
           title: 'Tab One',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
-            <Link href="/" asChild>
+            <Link href="../modal" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
